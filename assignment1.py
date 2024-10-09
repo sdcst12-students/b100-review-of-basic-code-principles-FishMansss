@@ -13,3 +13,16 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+#Imports
+import math, os
+#inputs
+os.system('cls')
+print("Enter Principle:")
+p = int(input())
+print("Enter Interest rate per Year:")
+r = int(input())
+print("Enter time in years:")
+t = int(input())
+os.system('cls')
+#print
+print("your interest is $",p*r*t)
