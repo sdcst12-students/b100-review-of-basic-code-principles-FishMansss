@@ -22,4 +22,23 @@ rate: 5%
 final balance: 1320.68
 
 """
+#imports
+import math, os
+os.system('cls')
+#inputs
+print("Anual Interest Rate in %:")
+r = int(input())
+print("Time in Years:")
+t = int(input())
+print("Annual investment")
+a = int(input())
+#balance
+b = int()
 
+#calculation/printing
+for i in range(t):
+    b = (b + a)     
+    b = b + (r/100*b)
+d = float(b)
+d = round(d,2)
+print("your ballance is",d)
