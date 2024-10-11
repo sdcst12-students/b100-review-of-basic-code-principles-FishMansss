@@ -22,11 +22,26 @@ How many months will it take him to pay off the car.  How much interest has he p
 He will have paid 21711.60 in interest
 """
 import math,os
-
+os.system('cls')
 print("initial debt:")
 d = float(input())
-print('anual interest rate')
+print('interest rate per month')
 r = float(input())
+r = r/100
 print("monthly payment")
 p = float(input())
+t = int()
+rate = float()
+tracker = float()
 
+while d >0:
+    rate = d*r
+    tracker = tracker + rate
+    d = d + rate
+    d = d - p
+    
+    t = t + 1
+    
+os.system('cls')
+print(t,"months")
+print("you will have payed", round(tracker,2), "in interest")
